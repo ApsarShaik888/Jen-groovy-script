@@ -1,0 +1,24 @@
+#Create a pipeline for build,test and deploy stages in Groovy Script
+pipeline {
+	agent any
+	stages{
+
+		stage('Build'){
+			steps{
+			echo 'Maven Build'
+                           }
+			} 
+		stage('Test'){
+
+			steps{
+			echo 'Final Regression Testing'
+			     }
+                           }			
+		stage('Deploy'){
+			steps{
+			echo 'Deploying the code'
+			   }
+			}
+
+		}
+}

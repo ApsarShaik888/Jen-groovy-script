@@ -1,0 +1,13 @@
+pipeline {
+	agent any
+		stages{
+
+			stage(){
+				steps{
+				echo 'Hello world,'
+				echo 'Welcome to my Github Repository - ApsarShaik888'
+				echo 'Thank you!!'
+				     }
+                               }
+                        }	
+	 }
