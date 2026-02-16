@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage('Hi'){
+            steps{
+		sh '''
+                echo 'Hello World'
+		ls
+		pwd
+		date
+		cal 2026
+		'''
+            }
+        }
+    }
+}
